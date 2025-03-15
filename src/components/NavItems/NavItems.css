@@ -1,0 +1,86 @@
+#nav-items-width {
+    width: 231px;
+}
+
+#nav-items {
+    box-sizing: border-box;
+    width: 251px;
+    position: fixed;
+    top: 72px;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 20px;
+}
+
+#popular {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    background-color: #e5ebee;
+    border-radius: 8px;
+    height: 40px;
+}
+
+#popular img {
+    position: absolute;
+    top: 10px;
+    left: 22px;
+}
+
+#popular-text {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 300;
+    top: 10px;
+    left: 56px;
+}
+
+.nav-items-container {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.title {
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0 0 16px;
+    color: gray;
+}
+
+.title:hover {
+    background-color: #f6f8f9;
+    cursor: pointer;
+}
+
+.items {
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 10px 0 0 16px;
+}
+
+.items:hover {
+    background-color: #f6f8f9;
+    cursor: pointer;
+}
+
+.more-less {
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 8px 16px;
+    width: fit-content;
+}
+
+.more-less:hover {
+    background-color: #dbe4e9;
+    cursor: pointer;
+}

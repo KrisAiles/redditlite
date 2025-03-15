@@ -1,9 +1,7 @@
-const commentsArray = ["Early 90's in Sweden I learned about \"ättestupa\" - the viking practice of seniors throwing themselves/being thrown down cliffs when the…", "Rosa Parks wasn’t the first to refuse to sit in the back of the bus. Shout out to Claudette Colvin!", "In 7th grade my geography teacher taught us that China had such a big population because of the Asian monsoons (which basically means th…", "Battle of Wounded Knee. It wasn’t a battle, it was a massacre. Also, my class only really mentioned the number of American soldier…", "I had a teacher in the 90s laugh at me when I said I didnt think currencies needed to be tied to gold.↵↵He didnt know the gold standar…", "In the Philippines, that Filipinos invented the fluorescent bulb and karaoke.", "D.A.R.E. taught me that people would be offering me free drugs everywhere. Boy were they wrong.", "That Thomas Edison invented the light bulb.", "I told my son who was studying about a country's history and the teacher sent a homework about one of their castles saying it was from th…", "I’m a teacher so I like to check myself when I say something that they’re surprised by. Recently I found out that Black Widow spiders onl…", "That the dollar sign is a U superimposed on an S, that stands for the United States.  The Symbol predates the US.", "Turns out the American Civil War was not a result of “Abraham Lincoln being a poopy-head”.  Gotta thank the Mississippi school system fo…", "The discovery of America. Columbus was FAR from the wide-eyed visionary explorer children's books make him out to be. Very, very far.", "The “war of northern aggression” is actually colloquially called the Civil War.", "Tulsa?  Nothing happened in Tulsa - check your history book", "*”Listen, my children, and you shall hear of the midnight ride of Paul Revere”*↵↵↵Paul Revere rode approximately 20 miles from Boston t…", "Tastebuds. I vividly remember a textbook saying that since we had the soft spot at the tip of the tongue, we liked licking ice creams an…", "Eating carrots helps your night vision.", "who else here was raised in the 80s where the Food Pyramid was drilled into your head?  I've known longer that it's hogwash than I 'lived…", "Peaceful negotiation only happens after a long period of violence and unrest until the colonialist find themselves on the losing end. Ain'…", 
-"Lot of Columbus hate in here, and for good reason. But I'd just like to add that the impression I got in school was that the Nativ…", "That if you did something blatantly illegal, the cops would arrest you", "That the Pilgrims came over to America for “religious freedom”.  Painted them as these kind of progressive liberal Christians and acros…", "\"Nobody knows what killed the dinosaurs\"", "Young George Washington and the cherry tree. That story was in textbooks in our elementary school.", "For Czech, that the Hussite wars were over Czech nationalism, I mean they weren’t really, they’re a basis of our nationalism but tbh it wa…", "Slave in the American South were largely treated like members of the family.", "That Puritans left England due to religious persecution.  I just learned that the Puritans were against any other religion and left Englan…", "My middle school history teacher was adamant that the Civil War was over state's rights and not slavery..", "The idea of checks and balances in the government", "That nobody walks around with a calculator in their pocket...", "That buffalo were not hunted to extinction in the 1800s. I probably just misunderstood but this shattered my perception of American histor…", "Being from Texas I learned that the \"Texians,\" that is, American colonists who came to Texas, fought for their freedom against a tyrannica…", "That slavery wasn't that bad, And sometimes they had a picnic!", "Quicksand was a threat out to kill me and everyone I love.", "I remember doing something in primary school (about 7-8year old) on explorers. ↵↵This included that Columbus was European in America an…", "(about the Battle of Stalingrad) \"The People of Stalingrad, as one, stood up and told the fascist invader 'no, you shall not take the cit…", "That Truganini was the Last Tasmanian Aboriginal. There is still a proud Tasmanian Aboriginal community. \"Pure blood\" does not matter.", "That where the bible said Adam donated a rib to make Eve, it said it as a theological way of explaining “why men have fewer ribs tha…", "That when John F Kennedy said 'Ich bin ein Berliner' he was unintentionally saying 'I am a doughnut'.  This was a rumour that came abou…", "Nero setting Rome on fire and the political structure of Feudalism.", "Sojourner Truth's famous \"Ain't I a woman\" speech never happened, at least not the way it's presented.↵↵She was actually born and raised i…"]
-
-
-
-const postsArray = [
+const mockdata = {
+    commentsArray: ["Early 90's in Sweden I learned about \"ättestupa\" - the viking practice of seniors throwing themselves/being thrown down cliffs when the…", "Rosa Parks wasn’t the first to refuse to sit in the back of the bus. Shout out to Claudette Colvin!", "In 7th grade my geography teacher taught us that China had such a big population because of the Asian monsoons (which basically means th…", "Battle of Wounded Knee. It wasn’t a battle, it was a massacre. Also, my class only really mentioned the number of American soldier…", "I had a teacher in the 90s laugh at me when I said I didnt think currencies needed to be tied to gold.↵↵He didnt know the gold standar…", "In the Philippines, that Filipinos invented the fluorescent bulb and karaoke.", "D.A.R.E. taught me that people would be offering me free drugs everywhere. Boy were they wrong.", "That Thomas Edison invented the light bulb.", "I told my son who was studying about a country's history and the teacher sent a homework about one of their castles saying it was from th…", "I’m a teacher so I like to check myself when I say something that they’re surprised by. Recently I found out that Black Widow spiders onl…", "That the dollar sign is a U superimposed on an S, that stands for the United States.  The Symbol predates the US.", "Turns out the American Civil War was not a result of “Abraham Lincoln being a poopy-head”.  Gotta thank the Mississippi school system fo…", "The discovery of America. Columbus was FAR from the wide-eyed visionary explorer children's books make him out to be. Very, very far.", "The “war of northern aggression” is actually colloquially called the Civil War.", "Tulsa?  Nothing happened in Tulsa - check your history book", "*”Listen, my children, and you shall hear of the midnight ride of Paul Revere”*↵↵↵Paul Revere rode approximately 20 miles from Boston t…", "Tastebuds. I vividly remember a textbook saying that since we had the soft spot at the tip of the tongue, we liked licking ice creams an…", "Eating carrots helps your night vision.", "who else here was raised in the 80s where the Food Pyramid was drilled into your head?  I've known longer that it's hogwash than I 'lived…", "Peaceful negotiation only happens after a long period of violence and unrest until the colonialist find themselves on the losing end. Ain'…", 
+"Lot of Columbus hate in here, and for good reason. But I'd just like to add that the impression I got in school was that the Nativ…", "That if you did something blatantly illegal, the cops would arrest you", "That the Pilgrims came over to America for “religious freedom”.  Painted them as these kind of progressive liberal Christians and acros…", "\"Nobody knows what killed the dinosaurs\"", "Young George Washington and the cherry tree. That story was in textbooks in our elementary school.", "For Czech, that the Hussite wars were over Czech nationalism, I mean they weren’t really, they’re a basis of our nationalism but tbh it wa…", "Slave in the American South were largely treated like members of the family.", "That Puritans left England due to religious persecution.  I just learned that the Puritans were against any other religion and left Englan…", "My middle school history teacher was adamant that the Civil War was over state's rights and not slavery..", "The idea of checks and balances in the government", "That nobody walks around with a calculator in their pocket...", "That buffalo were not hunted to extinction in the 1800s. I probably just misunderstood but this shattered my perception of American histor…", "Being from Texas I learned that the \"Texians,\" that is, American colonists who came to Texas, fought for their freedom against a tyrannica…", "That slavery wasn't that bad, And sometimes they had a picnic!", "Quicksand was a threat out to kill me and everyone I love.", "I remember doing something in primary school (about 7-8year old) on explorers. ↵↵This included that Columbus was European in America an…", "(about the Battle of Stalingrad) \"The People of Stalingrad, as one, stood up and told the fascist invader 'no, you shall not take the cit…", "That Truganini was the Last Tasmanian Aboriginal. There is still a proud Tasmanian Aboriginal community. \"Pure blood\" does not matter.", "That where the bible said Adam donated a rib to make Eve, it said it as a theological way of explaining “why men have fewer ribs tha…", "That when John F Kennedy said 'Ich bin ein Berliner' he was unintentionally saying 'I am a doughnut'.  This was a rumour that came abou…", "Nero setting Rome on fire and the political structure of Feudalism.", "Sojourner Truth's famous \"Ain't I a woman\" speech never happened, at least not the way it's presented.↵↵She was actually born and raised i…"], 
+postsArray: [
     {author: "HeadSavings1410", 
     permalink: "/r/AskReddit/comments/1jb7l5n/musk_keeps_amplifying_the_impeachment_of_judges/", 
     score: 3546, 
@@ -204,9 +202,8 @@ const postsArray = [
     url: "https://www.reddit.com/r/AskReddit/comments/1jajluk/whats_a_common_health_myth_that_needs_to_go_away/", 
     created: 1741892011, 
     num_comments: 2328}
-];
-
-const subredditArray = [
+], 
+subredditArray: [
     {banner_background_color: "", 
         banner_background_image: "", 
     banner_image: undefined, 
@@ -482,4 +479,42 @@ const subredditArray = [
         subreddit_type: "public", 
         community_icon: "https://styles.redditmedia.com/t5_2cneq/styles/communityIcon_fy84mdgh75201.jpg?width=256&amp;s=0842d327b6d42f0e432135c7f46030bd8db64e4b", 
         subscribers: 8773651}
-];
+], 
+history: [
+    {banner_background_color: "", 
+        banner_background_image: "", 
+    banner_image: undefined, 
+    description: "Everything home related: interior design, home improvement, architecture.↵↵**Related subreddits**↵--------------------------↵…", 
+    display_name_prefixed: "r/Home", 
+    title: "Home", 
+    url: "/r/Home/", 
+    created: 1232850357, 
+    subreddit_type: "public", 
+    community_icon: "", 
+    subscribers: 289605}, 
+    {banner_background_color: "#d4eaff", 
+        banner_background_image: "", 
+        banner_image: undefined, 
+        description: "###### [ [ SERIOUS ] ](http://www.reddit.com/r/askreddit/submit?selftext=true&amp;title=%5BSerious%5D)\r↵\r↵\r↵####…", 
+        display_name_prefixed: "r/AskReddit", 
+        title: "Ask Reddit...", 
+        url: "/r/AskReddit/", 
+        created: 1201233135, 
+        subreddit_type: "public", 
+        community_icon: "https://styles.redditmedia.com/t5_2qh1i/styles/communityIcon_p6kb2m6b185b1.png?width=256&amp;s=c28b9f038c305e139b62739f2133d7b776582696", 
+        subscribers: 52758391}, 
+    {banner_background_color: "#0079d3", 
+        banner_background_image: "https://styles.redditmedia.com/t5_2w844/styles/bannerBackgroundImage_k7ndz0eykl191.jpg?width=4000&amp;s=6ffc54d4a94c6573fbbe5a8f7f82e79519fe…", 
+        banner_image: undefined, 
+        description: "###There is no such thing as a Stupid Question!↵↵Don't be embarrassed of your curiosity; everyone has questions that they may fee…", 
+        display_name_prefixed: "r/NoStupidQuestions", 
+        title: "No such thing as stupid questions", 
+        url: "/r/NoStupidQuestions/", 
+        created: 1359795144, 
+        subreddit_type: "public", 
+        community_icon: "https://styles.redditmedia.com/t5_2w844/styles/communityIcon_krq4riav5m191.png?width=256&amp;s=3bb045009d2a9d1d7543dc7afb7b53a0e6f18121", 
+        subscribers: 5580183}
+]
+};
+
+export default mockdata;
