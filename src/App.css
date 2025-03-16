@@ -7,4 +7,36 @@ main {
 #nav-bar {
   position: fixed;
   padding-right: 16px;
+  background-color: white;
+  z-index: 990;
 }
+
+#main-display {
+  display: flex;
+  width: 100%;
+  margin-left: 60px;
+}
+
+/*Begin mobile.*/
+@media only screen and (max-width: 880px) {
+  main {
+    margin-top: 114px;
+  }
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media only screen and (min-width: 881px) and (max-width: 1200px) {
+  main {
+    margin-top: 57px;
+  }
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media only screen and (min-width: 1201px) {
+  main {
+    margin-top: 57px;
+  }
+}
+/*End desktop.*/

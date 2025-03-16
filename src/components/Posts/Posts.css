@@ -1,0 +1,60 @@
+.post {
+    border-bottom: 1px solid lightgray;
+    padding: 0;
+    margin: 0;
+}
+
+.post-box {
+    
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.post-box:hover {
+    background-color: #f6f8f9;
+    cursor: pointer;
+}
+
+.post-box p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.postBy {
+    font-size: 13px;
+    color: gray;
+    font-weight: 500;
+}
+
+.dot-container {
+    display: inline;
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+}
+
+.time {
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.votes {
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+}
+
+.comments {
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+    margin-left: 5px;
+}

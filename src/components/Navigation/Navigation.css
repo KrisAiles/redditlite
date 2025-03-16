@@ -6,6 +6,7 @@ nav {
     box-sizing: border-box;
     min-height: 100vh;
     padding: 15px 24px 15px 16px;
+    z-index: 800;
 }
 
 #close-arrow {
@@ -25,4 +26,3 @@ nav {
     border: 1px solid black;
     cursor: pointer;
 }
-

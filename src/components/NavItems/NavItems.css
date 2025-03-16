@@ -84,3 +84,27 @@
     background-color: #dbe4e9;
     cursor: pointer;
 }
+
+/*Begin mobile.*/
+@media only screen and (max-width: 880px) {
+    #nav-items {
+        top: 130px;
+    }
+}
+/*End mobile.*/
+
+/*Begin tablet.*/
+@media only screen and (min-width: 881px) and (max-width: 1200px) {
+    #nav-items {
+        top: 72px;
+    }
+}
+/*End tablet.*/
+
+/*Begin desktop.*/
+@media only screen and (min-width: 1201px) {
+    #nav-items {
+        top: 72px;
+    }
+}
+/*End desktop.*/
