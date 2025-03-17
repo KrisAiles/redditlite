@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './Communities.css';
-import mockdata from "../../mockdata/mockdata";
+//import mockdata from "../../mockdata/mockdata";
 import redditlogo from '../History/redditlogo.png';
 
 function Communities(props) {
@@ -8,27 +8,28 @@ function Communities(props) {
     const [rest, setRest] = useState([]);
 
     useEffect(() => {
-        setTopFive(mockdata.subredditArray.slice(0,5));
-    }, [])
+        setTopFive(props.subredditCommunities.slice(0,5));
+    }, [props.subredditCommunities])
     useEffect(() => {
-        setRest(mockdata.subredditArray.slice(5));
-    }, [])
+        setRest(props.subredditCommunities.slice(5));
+    }, [props.subredditCommunities])
 
     return (
         <div id="community-list-container">
+            {props.mobileViewport && <img id="close-communities" src={props.communitiesImage} alt="Open/Close navigation bar" onClick={props.handleOpenCommunitiesChange} />}
             <span id="popular-communities-text">POPULAR COMMUNITIES</span>
             <div className="community-list">
                 { topFive.map((subreddit) => {
-                    if (subreddit.community_icon) {
+                    if (subreddit.data.community_icon) {
                         return (
-                            <div className="subreddit-community" key={subreddit.display_name_prefixed} >
-                                <img src={subreddit.community_icon.split('?')[0]} alt={subreddit.display_name_prefixed} /><div className="community-text">{subreddit.display_name_prefixed}</div>
+                            <div className="subreddit-community" key={subreddit.data.display_name_prefixed} >
+                                <img src={subreddit.data.community_icon.split('?')[0]} alt={subreddit.data.display_name_prefixed} /><div className="community-text">{subreddit.data.display_name_prefixed}</div>
                             </div>
                         )
                     } else {
                         return (
-                            <div className="subreddit-community" key={subreddit.display_name_prefixed} >
-                                <img src={redditlogo} alt={subreddit.display_name_prefixed} /><div className="community-text">{subreddit.display_name_prefixed}</div>
+                            <div className="subreddit-community" key={subreddit.data.display_name_prefixed} >
+                                <img src={redditlogo} alt={subreddit.data.display_name_prefixed} /><div className="community-text">{subreddit.data.display_name_prefixed}</div>
                             </div>
                         )
                     }
@@ -38,16 +39,16 @@ function Communities(props) {
             {!props.communities && 
                 <div>
                     { rest.map((subreddit) => {
-                        if (subreddit.community_icon) {
+                        if (subreddit.data.community_icon) {
                             return (
-                                <div className="subreddit-community" key={subreddit.display_name_prefixed} >
-                                    <img src={subreddit.community_icon.split('?')[0]} alt={subreddit.display_name_prefixed} /><div className="community-text">{subreddit.display_name_prefixed}</div>
+                                <div className="subreddit-community" key={subreddit.data.display_name_prefixed} >
+                                    <img src={subreddit.data.community_icon.split('?')[0]} alt={subreddit.data.display_name_prefixed} /><div className="community-text">{subreddit.data.display_name_prefixed}</div>
                                 </div>
                             )
                         } else {
                             return (
-                                <div className="subreddit-community" key={subreddit.display_name_prefixed} >
-                                    <img src={redditlogo} alt={subreddit.display_name_prefixed} /><div className="community-text">{subreddit.display_name_prefixed}</div>
+                                <div className="subreddit-community" key={subreddit.data.display_name_prefixed} >
+                                    <img src={redditlogo} alt={subreddit.data.display_name_prefixed} /><div className="community-text">{subreddit.data.display_name_prefixed}</div>
                                 </div>
                             )
                         }

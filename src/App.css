@@ -14,13 +14,16 @@ main {
 #main-display {
   display: flex;
   width: 100%;
-  margin-left: 60px;
 }
 
 /*Begin mobile.*/
 @media only screen and (max-width: 880px) {
   main {
     margin-top: 114px;
+  }
+
+  #main-display {
+    margin-left: 0;
   }
 }
 /*End mobile.*/
@@ -30,6 +33,10 @@ main {
   main {
     margin-top: 57px;
   }
+
+  #main-display {
+    margin-left: 60px;
+  }
 }
 /*End tablet.*/
 
@@ -37,6 +44,10 @@ main {
 @media only screen and (min-width: 1201px) {
   main {
     margin-top: 57px;
+  }
+
+  #main-display {
+    margin-left: 60px;
   }
 }
 /*End desktop.*/

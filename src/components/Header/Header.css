@@ -68,6 +68,42 @@
     top: 3px;
 }
 
+#open-nav {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 16px;
+    bottom: -16px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid gray;
+    box-shadow: 0px 1px 2px lightgray;
+    z-index: 979;
+}
+
+#open-nav:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#open-communities {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 16px;
+    bottom: -16px;
+    background-color: white;
+    border-radius: 100%;
+    border: 1px solid gray;
+    box-shadow: 0px 1px 2px lightgray;
+    z-index: 979;
+}
+
+#open-communities:hover {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
 /*Begin mobile.*/
 @media only screen and (max-width: 880px) {
     #header {

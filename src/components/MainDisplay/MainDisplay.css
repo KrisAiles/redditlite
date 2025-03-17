@@ -1,4 +1,29 @@
 #nav-placeholder {
     width: 286px;
-    height: 1000px;
+    height: 100%;
 }
+
+/*Begin mobile.*/
+@media only screen and (max-width: 880px) {
+    #nav-placeholder {
+        display: none;
+    }
+
+  }
+  /*End mobile.*/
+  
+  /*Begin tablet.*/
+  @media only screen and (min-width: 881px) and (max-width: 1200px) {
+    #nav-placeholder {
+        display: block;
+    }
+  }
+  /*End tablet.*/
+  
+  /*Begin desktop.*/
+  @media only screen and (min-width: 1201px) {
+    #nav-placeholder {
+        display: block;
+    }
+  }
+  /*End desktop.*/

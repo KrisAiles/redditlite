@@ -1,6 +1,7 @@
 import React from 'react';
 import './NavItems.css';
 import onpopular from './onpopular.png';
+import offpopular from './offpopular.png';
 import History from '../History/History';
 import mockdata from "../../mockdata/mockdata";
 
@@ -15,9 +16,7 @@ function NavItems(props) {
         <div id="nav-items">
             <div id='nav-items-width'></div>
             <div className="nav-items-container">
-                <div id='popular'>
-                    <img src={onpopular} alt="arrow" /><span id="popular-text">Popular</span>
-                </div>
+                    {props.popularOpen ? <div id='popular'><img src={onpopular} alt="arrow" /><span id="popular-text">Popular</span></div> : <div id='off-popular' onClick={props.handlePopularChange}><img src={offpopular} alt="arrow" /><span id="popular-text">Popular</span></div>}
             </div>
             {mockdata.history.length > 0 && <History />}            
             <div className='nav-items-container'>

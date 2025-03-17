@@ -1,0 +1,134 @@
+.comments-container {
+    position: relative;
+    box-sizing: border-box;
+}
+
+#back-arrow {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #e5ebee;
+}
+
+#back-arrow:hover {
+    background-color: #dbe4e9;
+}
+
+.comment {
+    /*border-bottom: 1px solid lightgray;*/
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.comments-title {
+    font-size: 13px;
+    color: gray;
+    font-weight: 500;
+    padding-left: 20px;
+}
+
+.comment-box {
+    box-sizing: border-box;
+    margin: 5px 0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.comment-box p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.commentBy {
+    font-size: 13px;
+    color: gray;
+    font-weight: 500;
+    padding-left: 16px;
+}
+
+.dot-container {
+    display: inline;
+    position: relative;
+}
+
+.dot {
+    position: absolute;
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+}
+
+.time {
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.votes {
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+}
+
+.comments {
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.comments-para {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px;
+}
+
+.comments-text {
+    padding-left: 16px;
+}
+
+.author {
+    padding-left: 16px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#post-link {
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.comment-body {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+
+    overflow-wrap: anywhere;
+}
+
+.comment-dot-container {
+    display: inline;
+    position: relative;
+    margin: 0 2px;
+}
+
+.comment-dot {
+    position: absolute;
+    font-size: 13px;
+    color: gray;
+    font-weight: 400;
+    top: -10px;
+    left: 1px;
+}

@@ -36,6 +36,35 @@
     left: 56px;
 }
 
+#off-popular {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    height: 40px;
+    cursor: pointer;
+}
+
+#off-popular:hover {
+    background-color: #f6f8f9;
+    cursor: pointer;
+}
+
+#off-popular img {
+    position: absolute;
+    top: 10px;
+    left: 22px;
+}
+
+#off-popular-text {
+    position: absolute;
+    font-size: 15px;
+    font-weight: 300;
+    top: 10px;
+    left: 56px;
+}
+
 .nav-items-container {
     border-bottom: 1px solid lightgray;
     padding-bottom: 12px;

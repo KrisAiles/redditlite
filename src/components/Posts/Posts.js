@@ -1,8 +1,7 @@
 import React from "react";
 import './Posts.css';
-import mockdata from "../../mockdata/mockdata";
 
-function Posts() {
+function Posts(props) {
 
     function timeSincePost(time) {
         let datePosted = new Date(time * 1000);
@@ -28,15 +27,15 @@ function Posts() {
     }
 
     return (
-        <div>
-            {mockdata.postsArray.map((post) => {
-                let timePosted = post.created;
+        <div className="top-border">
+            {props.posts.map((post) => {
+                let timePosted = post.data.created;
                 return (
-                    <div className="post" key={post.title}>
-                        <div className="post-box">
-                            <span className="postBy">r/{post.subreddit}</span> <div className="dot-container"><span className="dot">.</span></div> <span className="time">{timeSincePost(timePosted)}</span>
-                            <p>{post.title}</p>
-                            <span className="votes">{post.score <= 1000 ? post.score : (post.score / 1000).toFixed(1) + 'K'} votes</span> <div className="dot-container"><span className="dot">.</span></div> <span className="comments">{post.num_comments <= 1000 ? post.num_comments : (post.num_comments / 1000).toFixed(1) + 'K'} comments</span>
+                    <div className="post" key={post.data.id} data-id={post.data.permalink}>
+                        <div className="post-box" onClick={props.handlePostChange} data-id={post.data.permalink}>
+                            <span data-id={post.data.permalink} className="postBy">r/{post.data.subreddit}</span> <div data-id={post.data.permalink} className="dot-container"><span data-id={post.data.permalink} className="dot">.</span></div> <span data-id={post.data.permalink} className="time">{timeSincePost(timePosted)}</span>
+                            <p data-id={post.data.permalink}>{post.data.title}</p>
+                            <span data-id={post.data.permalink} className="votes">{post.data.score <= 1000 ? post.data.score : (post.data.score / 1000).toFixed(1) + 'K'} votes</span> <div data-id={post.data.permalink} className="dot-container"><span data-id={post.data.permalink} className="dot">.</span></div> <span data-id={post.data.permalink} className="comments">{post.data.num_comments <= 1000 ? post.data.num_comments : (post.data.num_comments / 1000).toFixed(1) + 'K'} comments</span>
                         </div>
                     </div>
                 )

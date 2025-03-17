@@ -12,7 +12,6 @@
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    border-top: 1px solid lightgray;
 }
 
 .community-container {
@@ -22,7 +21,6 @@
     right: 20px;
     overflow-y: scroll;
     box-sizing: border-box;
-    width: 270px;
     border-radius: 8px;
 }
 
@@ -37,10 +35,15 @@
     .community-container {
         top: 130px;
         right: 20px;
+        width: 286px;
     }
 
     .post-container {
         margin: 16px 20px;
+    }
+
+    #community-placeholder {
+        display: none;
     }
   }
   /*End mobile.*/
@@ -50,10 +53,15 @@
     .community-container {
         top: 73px;
         right: 20px;
+        width: 270px;
     }
 
     .post-container {
         margin: 16px 20px;
+    }
+
+    #community-placeholder {
+        display: block;
     }
   }
   /*End tablet.*/
@@ -63,10 +71,15 @@
     .community-container {
         top: 73px;
         right: 20px;
+        width: 270px;
     }
 
     .post-container {
         margin: 16px 20px;
+    }
+
+    #community-placeholder {
+        display: block;
     }
   }
   /*End desktop.*/
