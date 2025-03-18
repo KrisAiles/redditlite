@@ -14,72 +14,20 @@
     width: 100%;
 }
 
-.community-container {
-    position: fixed;
-    top: 73px;
-    bottom: 0;
-    right: 20px;
-    overflow-y: scroll;
-    box-sizing: border-box;
-    border-radius: 8px;
-}
-
-#community-placeholder {
-    min-width: 290px;
-    max-width: 290px;
-    height: 1000px;
-}
-
 /*Begin mobile.*/
 @media only screen and (max-width: 880px) {
-    .community-container {
-        top: 130px;
-        right: 20px;
-        width: 286px;
-    }
 
-    .post-container {
-        margin: 16px 20px;
-    }
-
-    #community-placeholder {
-        display: none;
-    }
   }
   /*End mobile.*/
   
   /*Begin tablet.*/
   @media only screen and (min-width: 881px) and (max-width: 1200px) {
-    .community-container {
-        top: 73px;
-        right: 20px;
-        width: 270px;
-    }
 
-    .post-container {
-        margin: 16px 20px;
-    }
-
-    #community-placeholder {
-        display: block;
-    }
   }
   /*End tablet.*/
   
   /*Begin desktop.*/
   @media only screen and (min-width: 1201px) {
-    .community-container {
-        top: 73px;
-        right: 20px;
-        width: 270px;
-    }
 
-    .post-container {
-        margin: 16px 20px;
-    }
-
-    #community-placeholder {
-        display: block;
-    }
   }
   /*End desktop.*/

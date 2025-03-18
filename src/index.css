@@ -1,10 +1,9 @@
 body {
-  margin: 0;
   font-family: "Reddit Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: normal;
   font-style: normal;
-  background-color: white;
+  box-sizing: border-box;
 }
 
 code {

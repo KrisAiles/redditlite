@@ -1,4 +1,5 @@
 import React from "react";
+import { v4 as uuidv4 } from 'uuid';
 import './Comments.css';
 import commentsLogo from './comment_logo.png';
 import backArrow from './back_arrow.png';
@@ -33,11 +34,12 @@ function Comments(props) {
     return (
         <div className="comments-container">
             <div id="back-arrow" onClick={props.handlePostChange}><img src={backArrow} alt="back arrow" /></div>                
-            <div className="comment" key={post.title}>
+            <div className="comment" key={uuidv4()}>
                 <div className="comment-box">
                     <span className="commentBy">r/{post.subreddit}</span> <div className="dot-container"><span className="dot">.</span></div> <span className="time">{timeSincePost(timePosted)}</span><br/>
                     <span className="author">{post.author}</span>
                     <p>{post.title}</p>
+                    {post.thumbnail.includes(".jpg") && <div className="image-container"><img src={post.thumbnail} alt={post.title} style={{width: post.thumbnail_width, height: post.thumbnail_height}} /></div>}
                     <span className="votes">{post.score <= 1000 ? post.score : (post.score / 1000).toFixed(1) + 'K'} votes</span> <div className="dot-container"><span className="dot">.</span></div> <span className="comments">{post.num_comments <= 1000 ? post.num_comments : (post.num_comments / 1000).toFixed(1) + 'K'} comments</span> <div className="dot-container"><span className="dot">.</span></div> <a id="post-link" href={post.url} rel="noreferrer" target="_blank">view full post on Reddit</a>
                 </div>
                 <span className="comments-title">Comments:</span>
@@ -45,7 +47,7 @@ function Comments(props) {
             {props.comments[1].data.children.map((comment) => {
                 return (
                     comment.data.body && <div>
-                    <div className="comments-para" key={comment.data.link_id}>
+                    <div className="comments-para" key={uuidv4()}>
                         <img src={commentsLogo} alt="Reddit Logo" /> <span className="commentBy">r/{comment.data.author}</span> <div className="comment-dot-container"><span className="comment-dot">.</span></div> <span className="time">{timeSincePost(comment.data.created)}</span><br/>
                     </div>  
                     <div className="comment-body">

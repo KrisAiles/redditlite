@@ -1,4 +1,4 @@
-const redditFetch = async () => {
+/*const redditFetch = async () => {
     const url = 'https://www.reddit.com/r/AskReddit.json';
     const response = await fetch(url);
     console.log(response);
@@ -16,7 +16,7 @@ const redditFetch = async () => {
     console.log(json);
     //console.log(json.data);
     console.log(json[1].data.children[2].data.body);
-  }
+  }*/
 
   // /r/AskReddit/comments/1jb2jea/what_historical_fact_did_you_learn_in_school_that/
   /*

@@ -2,6 +2,7 @@ main {
   position: relative;
   display: flex;
   margin-top: 57px;
+  background-color: white;
 }
 
 #nav-bar {

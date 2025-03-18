@@ -20,6 +20,7 @@
     background-color: #e5ebee;
     border-radius: 8px;
     height: 40px;
+    cursor: pointer;
 }
 
 #popular img {

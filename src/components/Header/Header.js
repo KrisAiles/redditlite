@@ -14,7 +14,9 @@ function Header(props) {
          </div>
          <div id="search-container">
             <div id="input-container">
-                <input id="search" type="text" placeholder="Search Redditlite" />
+                <form onSubmit={props.handleSearchSubmit}>
+                    <input id="search" type="text" placeholder="Search Redditlite" value={props.searchInput} onChange={props.handleSearchChange} />
+                </form>
                 <img id="magnify" src={magnify} alt="magnifying glass" />
             </div>
          </div>

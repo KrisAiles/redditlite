@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import './Communities.css';
-//import mockdata from "../../mockdata/mockdata";
 import redditlogo from '../History/redditlogo.png';
 
 function Communities(props) {
@@ -22,14 +22,14 @@ function Communities(props) {
                 { topFive.map((subreddit) => {
                     if (subreddit.data.community_icon) {
                         return (
-                            <div className="subreddit-community" key={subreddit.data.display_name_prefixed} >
-                                <img src={subreddit.data.community_icon.split('?')[0]} alt={subreddit.data.display_name_prefixed} /><div className="community-text">{subreddit.data.display_name_prefixed}</div>
+                            <div data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} className="subreddit-community" key={uuidv4()} onClick={props.handleSubredditsClick} >
+                                <img  data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} src={subreddit.data.community_icon.split('?')[0]} alt={subreddit.data.display_name_prefixed} /><div data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} className="community-text">{subreddit.data.display_name_prefixed}</div>
                             </div>
                         )
                     } else {
                         return (
-                            <div className="subreddit-community" key={subreddit.data.display_name_prefixed} >
-                                <img src={redditlogo} alt={subreddit.data.display_name_prefixed} /><div className="community-text">{subreddit.data.display_name_prefixed}</div>
+                            <div data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} className="subreddit-community" key={uuidv4()} onClick={props.handleSubredditsClick} >
+                                <img data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} src={redditlogo} alt={subreddit.data.display_name_prefixed} /><div data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} className="community-text">{subreddit.data.display_name_prefixed}</div>
                             </div>
                         )
                     }
@@ -41,14 +41,14 @@ function Communities(props) {
                     { rest.map((subreddit) => {
                         if (subreddit.data.community_icon) {
                             return (
-                                <div className="subreddit-community" key={subreddit.data.display_name_prefixed} >
-                                    <img src={subreddit.data.community_icon.split('?')[0]} alt={subreddit.data.display_name_prefixed} /><div className="community-text">{subreddit.data.display_name_prefixed}</div>
+                                <div data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} className="subreddit-community" key={uuidv4()} onClick={props.handleSubredditsClick} >
+                                    <img data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} src={subreddit.data.community_icon.split('?')[0]} alt={subreddit.data.display_name_prefixed} /><div data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} className="community-text">{subreddit.data.display_name_prefixed}</div>
                                 </div>
                             )
                         } else {
                             return (
-                                <div className="subreddit-community" key={subreddit.data.display_name_prefixed} >
-                                    <img src={redditlogo} alt={subreddit.data.display_name_prefixed} /><div className="community-text">{subreddit.data.display_name_prefixed}</div>
+                                <div data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} className="subreddit-community" key={uuidv4()} onClick={props.handleSubredditsClick} >
+                                    <img data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} src={redditlogo} alt={subreddit.data.display_name_prefixed} /><div data-title={subreddit.data.title} data-created={subreddit.data.created_utc} data-icon={subreddit.data.community_icon} data-subs={subreddit.data.subscribers} data-description={subreddit.data.public_description} data-id={subreddit.data.display_name_prefixed} className="community-text">{subreddit.data.display_name_prefixed}</div>
                                 </div>
                             )
                         }

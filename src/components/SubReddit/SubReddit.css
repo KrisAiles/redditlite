@@ -1,0 +1,45 @@
+#subreddit-container {
+    width: 100%;
+    padding: 0;
+    margin: 0; 
+}
+
+#subreddit-icon {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+#logo-name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#subreddit-name {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#subreddit-title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#subreddit-description {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#subreddit-date {
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+}
+
+#subreddit-subs {
+    font-size: 14px;
+    color: gray;
+    font-weight: 400;
+}
